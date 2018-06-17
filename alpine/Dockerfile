@@ -41,11 +41,10 @@ WORKDIR /usr/share/nginx
 # Copy nginx configuration files
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY nginx/opsworks.conf /etc/nginx/conf.d/opsworks.conf
 
 #Copy custom index.html
 RUN mkdir /usr/share/nginx/opsworks
-COPY ./index.html /usr/share/nginx/opsworks/index.html
+ADD ./index.html /usr/local/nginx/html/index.html
 RUN chown -R nginx:nginx /usr/share/nginx
 
 # This is the default CMD
