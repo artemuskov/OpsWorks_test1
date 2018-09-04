@@ -1,6 +1,7 @@
 # OpsWorks_test1
 
 fixed bag by mzol! 
+version - 0.0.2
 
 Task definition:
 
