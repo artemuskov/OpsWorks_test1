@@ -1,5 +1,8 @@
 # OpsWorks_test1
 
+fixed bag by mzol! 
+version - 0.0.2
+
 Task definition:
 
 Create dockerized Nginx server with GitHub webhook deployment triggering using Jenkins pipelines (Jenkinsfile). 
